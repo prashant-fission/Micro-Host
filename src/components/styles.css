@@ -18,3 +18,17 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.trash-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
