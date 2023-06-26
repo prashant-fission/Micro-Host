@@ -10,8 +10,8 @@ const DeletedTasks = ({ deletedTask }) => {
         </div>
         {deletedTask.length > 0 ? (
           <ul className='list-group list-group-flush deleteTask'>
-            {(deletedTask || []).map((task) => {
-              return <li className='list-group-item'>{task}</li>;
+            {(deletedTask || []).map((task,index) => {
+              return <li className='list-group-item' key={index}>{task}</li>;
             })}
           </ul>
         ) : (
