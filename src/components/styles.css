@@ -29,3 +29,31 @@
   right: 10px;
   cursor: pointer;
 }
+.mainHeader{
+  margin-bottom: 60px;
+  font-weight: 800;
+}
+.addHeader{
+  font-weight: 600;
+  margin: 20px;
+  font-size: 18px;
+  color: rgb(52, 149, 218);
+}
+.deleteNotavailable{
+  margin: 80px;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: red;
+}
+.deleteHeader{
+  font-weight: 600;
+  margin: 20px;
+  font-size: 18px;
+  color: red;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
