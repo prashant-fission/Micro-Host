@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TrashIcon from '../icons/trash_icon.svg';
 
-const AddedTasks = () => {
+const AddedTasks = ({todo}) => {
     const [tasks, setTasks] = useState([
         {
             'id': '1',
@@ -17,8 +17,8 @@ const AddedTasks = () => {
         }
     ]);
 
-    const taskItems = tasks.map((task) => 
-        <li className="list-group-item" key={task.id}>{task.name}
+    const taskItems = todo.map((task, index) => 
+        <li className="list-group-item" key={index}>{task}
             <img className="trash-icon" src={TrashIcon}></img>
         </li>
     )
